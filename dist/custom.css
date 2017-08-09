@@ -1,0 +1,181 @@
+@charset "UTF-8";
+html {
+  font: 16px/150% helvetica, "微软雅黑", "microsoft yahei", verdana, lucida, arial, sans-serif, "黑体"; }
+
+.app-font-28 {
+  font-size: 28px; }
+
+.app-font-bold {
+  font-weight: bold; }
+
+.app-line-center {
+  display: flex;
+  justify-content: center; }
+
+.app-width-blod {
+  font-weight: 600; }
+
+.app-cloumn {
+  display: flex;
+  flex-direction: column; }
+
+.app-header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background: #3BF70C;
+  width: 100%;
+  box-shadow: 0px 2px 6px #6B6666;
+  z-index: 99;
+  /*改为flex*/ }
+  .app-header .container {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .app-header .header-title {
+    display: inline-block;
+    line-height: 80px;
+    color: #fff;
+    margin: 0; }
+
+.app-menu {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; }
+  .app-menu li {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 4px; }
+  .app-menu li:hover {
+    border: 1px solid #ccc; }
+
+.app-banner {
+  margin-top: 60px;
+  background: #ccc;
+  display: flex;
+  padding: 15px;
+  padding-top: 80px; }
+  .app-banner .con-left {
+    flex: 1;
+    padding: 15px; }
+    .app-banner .con-left p {
+      text-indent: 28px; }
+    .app-banner .con-left .app-line {
+      display: flex;
+      margin-top: 20px; }
+      .app-banner .con-left .app-line .line {
+        height: 5px;
+        background: #fff;
+        flex: 1;
+        margin-right: 10px; }
+      .app-banner .con-left .app-line .line-icon {
+        color: #fff;
+        line-height: 0px; }
+    .app-banner .con-left .app-mark {
+      margin-top: 20px; }
+  .app-banner .con-right {
+    width: 300px;
+    padding: 15px; }
+    .app-banner .con-right .show-img {
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+      border: 1px solid #ccc;
+      background: #fff;
+      overflow: hidden; }
+    .app-banner .con-right .name-title {
+      margin-top: 20px; }
+
+.content-title {
+  font-size: 22px;
+  font-weight: 400; }
+
+.app-underline {
+  display: flex;
+  margin-top: 20px; }
+  .app-underline span:nth-child(1),
+  .app-underline span:nth-child(3) {
+    flex: 1;
+    height: 4px;
+    background: #333; }
+  .app-underline span:nth-child(2) {
+    margin: 0 6px;
+    line-height: 0px; }
+
+.app-content {
+  padding-top: 20px;
+  background: #eee; }
+  .app-content .show-card {
+    margin-top: 40px; }
+    .app-content .show-card .app-card {
+      background: #fff; }
+      .app-content .show-card .app-card .app-img-div {
+        height: 300px;
+        display: flex;
+        justify-content: center; }
+        .app-content .show-card .app-card .app-img-div img {
+          width: 100%;
+          border: 1px solid #ccc;
+          height: auto; }
+      .app-content .show-card .app-card .card-text {
+        margin-top: 15px;
+        text-align: center; }
+
+.app-about {
+  background: #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .app-about .about-left {
+    padding-top: 20px; }
+    .app-about .about-left p {
+      font-size: 14px;
+      margin: 0; }
+  .app-about .link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px; }
+  .app-about .link-icon {
+    width: 38px;
+    height: 38px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    text-decoration: none; }
+    .app-about .link-icon i {
+      font-size: 20px; }
+    .app-about .link-icon .fa-wechat {
+      color: #09BB07; }
+    .app-about .link-icon .fa-qq {
+      color: #337ab7; }
+
+.app-footer {
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  background: #333;
+  margin-top: 50px; }
+
+@media screen and (max-width: 768px) {
+  .app-menu {
+    display: none; }
+  .app-banner {
+    flex-direction: column-reverse; }
+    .app-banner .con-right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }

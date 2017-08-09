@@ -1,0 +1,228 @@
+html {
+    font: 16px/150% helvetica, "微软雅黑", "microsoft yahei", verdana, lucida, arial, sans-serif, "黑体";
+}
+
+.app-font-28 {
+    font-size: 28px;
+}
+.app-font-bold{
+	font-weight: bold;
+}
+//居中
+.app-line-center {
+    display: flex;
+    justify-content: center;
+}
+
+.app-width-blod {
+    font-weight: 600;
+}
+
+.app-cloumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background: #3BF70C;
+    width: 100%;
+    box-shadow: 0px 2px 6px #6B6666;
+    z-index: 99;
+
+    /*改为flex*/
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-title {
+        display: inline-block;
+        line-height: 80px;
+        color: #fff;
+        margin: 0;
+    }
+}
+
+.app-menu {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    li {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid;
+        border-color: transparent;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 5px;
+        border-radius: 4px;
+    }
+    li:hover {
+        border: 1px solid #ccc;
+    }
+}
+
+.app-banner {
+    margin-top: 60px;
+    background: #ccc;
+    display: flex;
+    padding: 15px;
+    padding-top: 80px;
+    .con-left {
+        flex: 1;
+        padding: 15px;
+        p {
+            text-indent: 28px;
+        }
+        .app-line {
+            display: flex;
+            margin-top: 20px;
+            .line {
+                height: 5px;
+                background: #fff;
+                flex: 1;
+                margin-right: 10px;
+            }
+            .line-icon {
+                color: #fff;
+                line-height: 0px;
+            }
+        }
+        .app-mark {
+            margin-top: 20px;
+        }
+    }
+    .con-right {
+        width: 300px;
+        padding: 15px;
+        .show-img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            border: 1px solid #ccc;
+            background: #fff;
+            overflow: hidden;
+        
+        }
+        .name-title{
+        	margin-top: 20px;
+        }
+    }
+}
+.content-title {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .app-underline {
+        display: flex;
+        margin-top: 20px;
+
+        span:nth-child(1),
+        span:nth-child(3) {
+            flex: 1;
+            height: 4px;
+            background: #333;
+        }
+        span:nth-child(2) {
+            margin: 0 6px;
+            line-height: 0px;
+        }
+    }
+.app-content {
+    padding-top: 20px;
+    background: #eee;
+
+    .show-card {
+        margin-top: 40px;
+        .app-card {
+            background: #fff;
+            .app-img-div {
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    height: auto;
+                }
+            }
+            .card-text {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+.app-about{
+	background:#ccc;
+	padding-top:20px;
+	padding-bottom:20px;
+	.about-left{
+		padding-top:20px;
+		p{
+			font-size: 14px;
+			margin:0;
+		}
+	}
+	.link-wrapper{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		min-height: 60px;
+	}
+	.link-icon{
+			width: 38px;
+			height: 38px;
+			margin:0 15px;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			border-radius: 19px;
+			overflow: hidden;
+			border:1px solid #eee;
+			text-decoration: none;
+		i{
+			font-size: 20px;
+		}
+		.fa-wechat{
+				color:#09BB07
+			}.fa-qq{
+				color:#337ab7
+			}
+			.fa-inkedin{
+
+			}
+	}
+}
+
+.app-footer {
+    padding:20px;
+    width: 100%;
+    color: #fff;
+    background: #333;
+    margin-top: 50px;
+}
+
+@media screen and(max-width:768px) {
+    .app-menu {
+        display: none;
+    }
+    .app-banner{
+    	 flex-direction:column-reverse;
+    	 .con-right{
+    	 	width: 100%;
+    	 	display: flex;
+    	 	justify-content: center;
+    	 	align-items:center;
+    	 	flex-direction:column;
+    	 }
+
+    }
+}
