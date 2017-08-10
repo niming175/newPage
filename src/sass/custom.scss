@@ -64,9 +64,6 @@ html {
         margin-left: 5px;
         border-radius: 4px;
     }
-    li:hover {
-        border: 1px solid #ccc;
-    }
 }
 
 .app-banner {
@@ -207,12 +204,21 @@ html {
     width: 100%;
     color: #fff;
     background: #333;
-    margin-top: 50px;
 }
 
+.bs-example {
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px 15px;
+    border-color: #e5e5e5 #eee #eee;
+    border-style: solid;
+    border-width: 1px 0;
+    -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+    box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+}
 @media screen and(max-width:768px) {
-    .app-menu {
-        display: none;
+    .header-title{
+        display: none !important;
     }
     .app-banner{
     	 flex-direction:column-reverse;
@@ -224,5 +230,8 @@ html {
     	 	flex-direction:column;
     	 }
 
+    }
+    .app-header .container{
+       
     }
 }

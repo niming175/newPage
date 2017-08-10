@@ -9,28 +9,27 @@
     <link href="dist/main.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/custom.css">
+    <script type="text/javascript" src="dist/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/bootstrap.min.js"></script>
 </head>
 
-<body id="app">
-    <div class="container">
-    </div>
-    <!-- <script type="text/javascript" src="dist/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="dist/bootstrap.min.js"></script> -->
-    <div class="app-header clearfix">
-        <div class="container">
+<body id="app" data-spy="scroll" data-target="#navbar-example">
+    
+    <div class="app-header clearfix" >
+        <div class="container" id="navbar-example">
             <h2 class="pull-left header-title">
     	    	This is header world
     	    </h2>
-            <ul class="app-menu pull-right">
-                <li>test1</li>
-                <li>text2</li>
-                <li>text3</li>
-                <li>text4</li>
-                <li>text5</li>
+            <ul class="app-menu pull-right nav nav-pills">
+                
+              <li role="presentation" class="active"><a href="#test1">首页</a></li>
+              <li role="presentation"><a href="#test2">图片</a></li>
+              <li role="presentation"><a href="#test3">联系我们</a></li>
+
             </ul>
         </div>
     </div>
-    <div class="container app-banner">
+    <div class="container app-banner" id="test1">
         <div class="con-left">
             <p>
                 帕帕猴网络工作室，一个由WEB全栈工程师组成的工作室，有丰富的项目管理和项目开发经验。目前在<span class="app-width-blod">CMS网站开发、WEB APP、IOS/Android APP、微信公众号和小程序</span>均有成功案例。</p>
@@ -57,7 +56,7 @@
             <h4 class="text-center name-title">这个是文字</h4>
         </div>
     </div>
-    <div class="app-content container">
+    <div class="app-content container" id="test2">
         <p class="text-center content-title">This is Title</p>
         <div class="app-underline">
             <span></span>
@@ -95,9 +94,39 @@
                     </p>
                 </div>
             </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="alert app-card">
+                    <div class="app-img-div">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502388357945&di=30a0d1b9cc9dc0c1d3895b6d27c63943&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D68ab265ef81fbe090853cb5703096646%2F6a63f6246b600c339424c7e0104c510fd9f9a1bc.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">
+                        这是个文字
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="alert app-card">
+                    <div class="app-img-div">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502388357942&di=f47045ce9cab30c5e777b410aafd74fd&imgtype=0&src=http%3A%2F%2Fimg2.3lian.com%2F2014%2Ff5%2F54%2Fd%2F73.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">
+                        这是个文字
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="alert app-card">
+                    <div class="app-img-div">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502388357935&di=ba633ba0dd116bdb6b18fe879c75b594&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D729f32ebc9cec3fd9f33af36bee1be4a%2Ffd039245d688d43f4c195ed5771ed21b0ef43b61.jpg" alt="" class="card-img">
+                    </div>
+                    <p class="card-text">
+                        这是个文字
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="app-about container">
+    <div class="app-about container" id="test3">
     	<p class="text-center content-title app-font-bold">联系我们</p>
         <div class="app-underline">
             <span></span>
