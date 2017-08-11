@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const webserver = require('gulp-webserver')
 const watch = require('gulp-watch')
+const htmlmin = require('gulp-htmlmin');
 
 gulp.task('serve', function() {
   gulp.src('./')
@@ -36,6 +37,18 @@ gulp.task('html', function() {
 
 gulp.task('watch', ['vendor', 'sass', 'html'], function() {
 	return gulp.watch('src/**', ['sass', 'html'])
+})
+
+gulp.task('product', function() {
+    const options = {
+        removeComments: true, 
+        collapseWhitespace: true, 
+        minfyJS: true,
+        minfyCss: true 
+    }
+    return gulp.src('src/*.html')
+        .pipe(htmlmin(options))
+        .pipe(gulp.dest('./'))
 })
 
 gulp.task('default', ['watch', 'serve'])
