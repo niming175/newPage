@@ -14,20 +14,28 @@
 </head>
 
 <body id="app" data-spy="scroll" data-target="#navbar-example">
-    
-    <div class="app-header clearfix" >
-        <div class="container" id="navbar-example">
-            <h2 class="pull-left header-title">
-    	    	This is header world
-    	    </h2>
-            <ul class="app-menu pull-right nav nav-pills">
-                
-              <li role="presentation" class="active"><a href="#test1">首页</a></li>
-              <li role="presentation"><a href="#test2">图片</a></li>
-              <li role="presentation"><a href="#test3">联系我们</a></li>
-
-            </ul>
-        </div>
+    <div class=" clearfix">
+        <nav id="navbar-example" class="navbar navbar-default navbar-static app-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">This is header</a>
+                </div>
+                <div class="navbar-collapse bs-example-js-navbar-scrollspy collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#test1">简介</a></li>
+                        <li class=""><a href="#test2">图片</a></li>
+                        <li>
+                            <a href="#test3">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
     <div class="container app-banner" id="test1">
         <div class="con-left">
@@ -52,7 +60,6 @@
         </div>
         <div class="con-right alert text-center">
             <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1501867288618&di=840e7a3a8447dec647c4c7e11fc2c191&imgtype=0&src=http%3A%2F%2Fup.qqjia.com%2Fz%2Fface01%2Fface06%2Ffacejunyong%2Fjunyong04.jpg" alt="" class="show-img ">
-            
             <h4 class="text-center name-title">这个是文字</h4>
         </div>
     </div>
@@ -127,23 +134,23 @@
         </div>
     </div>
     <div class="app-about container" id="test3">
-    	<p class="text-center content-title app-font-bold">联系我们</p>
+        <p class="text-center content-title app-font-bold">联系我们</p>
         <div class="app-underline">
             <span></span>
             <span class="app-font-28">< / ></span>
             <span></span>
         </div>
         <div class="row">
-        	<div class="col-xs-12 col-md-6 text-center about-left">
-        		<p>this is line one text</p>
-        		<p>second line text</p>
-        		<p>Email:niming175@qq.com</p>
-        	</div>
-        	<div class="col-xs-12 col-md-6 link-wrapper">
-        		<a href="" class="link-icon"><i class="fa fa-wechat"></i></a>
-        		<a href="" class="link-icon"><i class="fa fa-qq"></i></a>
-        		<a href="" class="link-icon"><i class="fa fa-linkedin"></i></a>
-        	</div>
+            <div class="col-xs-12 col-md-6 text-center about-left">
+                <p>this is line one text</p>
+                <p>second line text</p>
+                <p>Email:niming175@qq.com</p>
+            </div>
+            <div class="col-xs-12 col-md-6 link-wrapper">
+                <a href="" class="link-icon"><i class="fa fa-wechat"></i></a>
+                <a href="" class="link-icon"><i class="fa fa-qq"></i></a>
+                <a href="" class="link-icon"><i class="fa fa-linkedin"></i></a>
+            </div>
         </div>
     </div>
     <div class="app-footer text-center app-font-28 app-font-bold">

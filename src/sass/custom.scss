@@ -26,7 +26,6 @@ html {
 .app-header {
     position: fixed;
     top: 0;
-    height: 60px;
     background: #3BF70C;
     width: 100%;
     box-shadow: 0px 2px 6px #6B6666;
@@ -35,8 +34,6 @@ html {
     /*改为flex*/
     .container {
         height: 100%;
-        display: flex;
-        align-items: center;
     }
 
     .header-title {
@@ -67,7 +64,7 @@ html {
 }
 
 .app-banner {
-    margin-top: 60px;
+    margin-top: 50px;
     background: #ccc;
     display: flex;
     padding: 15px;
@@ -218,7 +215,6 @@ html {
 }
 @media screen and(max-width:768px) {
     .header-title{
-        display: none !important;
     }
     .app-banner{
     	 flex-direction:column-reverse;
